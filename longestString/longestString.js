@@ -8,8 +8,6 @@ const findLongest = (arr) => {
     .sort((a, b) => {
     return a.length - b.length })
     .reverse()[0];
-
-
 }
 
 console.log(findLongest(['short', 'longer', 'looooongest']));
