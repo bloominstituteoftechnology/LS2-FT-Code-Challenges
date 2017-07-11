@@ -8,8 +8,7 @@ const longestStringInArray = myArray => {
     let longestString;
 
     for (var i = 0; i < myArray.length; i++) {
-        if (arr[i].length > lenth) {
-            let lenth = myArray[i].length;
+        if (myArray[i].length > lenth) {
             longestString = myArray[i];
         }
     }
