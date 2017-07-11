@@ -9,6 +9,6 @@
        longest = arr[i];
      }
    }
-   return console.log(longest);
+   return longest;
  };
 longestString(['hi','you','love','','jim','antonio']);
