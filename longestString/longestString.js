@@ -3,6 +3,7 @@
  * Return the longest string in the array.
  */
 
+<<<<<<< HEAD
  const findLongestArray = array => {
   let length = 0; 
   let longestArr;
@@ -16,3 +17,6 @@
  }
 
  findLongestArray(['John', 'Paul', 'George', 'Ringo'])
+=======
+ 
+>>>>>>> 35f1dea8ce6be7dc55620ffeb71fd05bae9587c0
