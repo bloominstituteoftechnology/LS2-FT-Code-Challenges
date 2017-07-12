@@ -1,7 +1,6 @@
 /*
  * Write a function that accepts an array of strings.
  * Return the longest string in the array.
-<<<<<<< HEAD
  */
 const longestString = (strArr) => {
  	let longest = '';
@@ -10,6 +9,3 @@ const longestString = (strArr) => {
  	}
  	return longest;
 };
-=======
- */
->>>>>>> parent of c23d91c... Completed
