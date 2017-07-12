@@ -19,8 +19,8 @@ console.log('***String Only***')
 const isUniqueStringOnly = (str) => {
 
   for (let i = 0; i < str.length; i++) {
-    const ch = str[i];
-    if (str.indexOf(ch, i + 1) > -1) {
+    const char = str[i];
+    if (str.indexOf(char, i + 1) > -1) {
       return false;
     }
     return true;
