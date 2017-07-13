@@ -4,6 +4,19 @@
  * Assume that each string will contain only spaces and letters.
  */
 
+const reverseCase = (str) => {
+  const arr = str.split('');
+  return arr.map((letter) => {
+    let resultStr = '';
+    if (letter === letter.toUpperCase()) {
+      return resultStr += letter.toLowerCase();
+    }
+    // console.log(letter.toUpperCase());
+    return resultStr += letter.toUpperCase();
+  }).join('');
+  // return resultStr;
+  // return arr.join('');
+};
 
 
 console.log(reverseCase('Hello World')); // 'hELLO wORLD'
