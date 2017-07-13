@@ -6,8 +6,8 @@
 const isUnique = (str) => {
   let uniqueChar = '';
   for (var i = 0; i < str.length; i++) {
-    if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
-      uniqued += str[i];
+    if (str.lastIndexOf(str[i]) === str.indexOf(str[i])) {
+      uniqueChar += str[i];
     }
   }
   return uniqueChar;
