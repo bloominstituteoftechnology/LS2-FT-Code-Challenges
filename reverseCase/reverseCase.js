@@ -6,18 +6,13 @@
 
 const reverseCase = (str) => {
   const arr = str.split('');
-  return arr.map((letter) => {
-    let resultStr = '';
-    if (letter === letter.toUpperCase()) {
-      return resultStr += letter.toLowerCase();
-    }
-    // console.log(letter.toUpperCase());
-    return resultStr += letter.toUpperCase();
-  }).join('');
-  // return resultStr;
-  // return arr.join('');
+  let resultStr = '';
+  arr.map((letter) =>
+    letter === letter.toUpperCase() ? resultStr += letter.toLowerCase() :
+                                      resultStr += letter.toUpperCase()).join('');
+  return resultStr;
 };
 
-
-console.log(reverseCase('Hello World')); // 'hELLO wORLD'
-console.log(reverseCase('How Are You Today')); // 'hOW aRE yOU tODAY'
+console.log(reverseCase('Hello World') === 'hELLO wORLD'); // true
+console.log(reverseCase('How Are You Today') === 'hOW aRE yOU tODAY'); // true
+console.log(reverseCase('AAAAAAAAh') === 'aaaaaaaaH'); // true
