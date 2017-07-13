@@ -2,9 +2,6 @@
  * Write a function that accepts an array of strings.
  * Return the longest string in the array.
  */
-
- 
-<<<<<<< HEAD
  const acceptsArray = (arr) => {
  let longest = '';
  for (let i = 0; i < arr.length; i++) {
@@ -17,6 +14,3 @@
 let myArray = ['111','12','1', '123123','12112'];
 
 console.log(acceptsArray(myArray));
-
-=======
->>>>>>> 35f1dea8ce6be7dc55620ffeb71fd05bae9587c0
