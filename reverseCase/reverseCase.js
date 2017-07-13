@@ -5,15 +5,15 @@
  */
 
  const caseChanger = (str) => {
-     let transformer = "";
+     let transformed = "";
      for (let i = 0; i < str.length; i++) {
          if (str[i] === str[i].toUpperCase())
-            transformer = transformer + str[i].toLowerCase();
+            transformed = transformed + str[i].toLowerCase();
          else if (str[i] === str[i].toLowerCase())
-            transformer = transformer + str[i].toUpperCase();
+            transformed = transformed + str[i].toUpperCase();
      }
 
-     return transformer;
+     return transformed;
  }
 
  console.log(caseChanger('naNa OWUsU NyaMekYe'));
