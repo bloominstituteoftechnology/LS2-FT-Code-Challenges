@@ -10,6 +10,7 @@ const reverseCase = (str) => {
   arr.map((letter) =>
     letter === letter.toUpperCase() ? resultStr += letter.toLowerCase() :
                                       resultStr += letter.toUpperCase()).join('');
+  console.log(arr);
   return resultStr;
 };
 
