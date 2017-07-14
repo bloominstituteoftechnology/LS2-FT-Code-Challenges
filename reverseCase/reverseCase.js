@@ -4,25 +4,29 @@
  * Assume that each string will contain only spaces and letters.
  */
 
- //
-let str = "sTEVIE";
-// let newString = '';
+ //ATTEMPT #3
+let str = "sTEvIe";
 
-const reverseCase = function() {
+const reverseCase = (str) => {
 
-} 
+str = str.split('');
+for (let i = 0; i < str.length; i++) {
+	if (str[i] === str[i].toUpperCase) {
+		str.push(str[i].toLowerCase);
+	} else if (str[i] === str[i].toLowerCase) {
+		str.push(str[i].toUpperCase);
+	} return str;
+};
 
-
-
-
-//ATTEMPT #2
- const reverseCase = str.split('').map((element) => {
-      return element === element.toUpperCase() ?
-        element.toLowerCase() : element.toUpperCase();
- 	});
-
- 
 console.log(reverseCase(str));
+
+ // ATTEMPT #2
+ // const reverseCase = str.map((element) => {
+ //      return element === element.toUpperCase() ?
+ //        element.toLowerCase() : element.toUpperCase();
+ // 	});
+
+
 
  // ATTEMPT #1 
  // let newString = '';
