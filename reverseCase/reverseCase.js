@@ -4,40 +4,43 @@
  * Assume that each string will contain only spaces and letters.
  */
 
- //ATTEMPT #3
-let str = "sTEvIe";
-
-const reverseCase = (str) => {
-
-str = str.split('');
-for (let i = 0; i < str.length; i++) {
-	if (str[i] === str[i].toUpperCase) {
-		str.push(str[i].toLowerCase);
-	} else if (str[i] === str[i].toLowerCase) {
-		str.push(str[i].toUpperCase);
-	} return str;
-};
-
-console.log(reverseCase(str));
+// ATTEMPT #3
+// let str = "LOWERCASE & uppercase";
+// const reverseCase = (str) => {
+// str = str.split('');
+// let reverseArray = [];
+// for (let i = 0; i < str.length; i++) {
+// 	if (str[i] === str[i].toUpperCase()) {
+// 		reverseArray.push(str[i].toLowerCase());
+// 	} else if (str[i] === str[i].toLowerCase()) {
+// 		reverseArray.push(str[i].toUpperCase());
+// 	} 
+//   } return reverseArray.join('');
+// };
+// console.log(reverseCase(str));
 
  // ATTEMPT #2
- // const reverseCase = str.map((element) => {
- //      return element === element.toUpperCase() ?
- //        element.toLowerCase() : element.toUpperCase();
- // 	});
-
-
-
- // ATTEMPT #1 
- // let newString = '';
-  
+ // let str = "LOWERCASE & uppercase";
  // const reverseCase = (str) => {
- // 	let stringArray = str.split('');
- // 	str.forEach((element) => {
- //      if element === element.toUpperCase() 
- //      	return newString += element.toLowerCase();
- //      else if element === element.toLowerCase() 
- //      	return newString += element.toUpperCase();
+ // 	const revStr = str.map((element) => {
+ //      element === element.toUpperCase() ? element.toLowerCase() : element.toUpperCase();
  // 	});
- // 	return newString;
- // }
+ // 	return revStr;
+ // };
+ // console.log(reverseCase(str));
+
+ // ATTEMPT #1
+ let str = "LOWERCASE & uppercase"; 
+
+ const reverseCase = (str) => {
+ 	let stringArray = str.split('');
+ 	str.forEach((element) => {
+      if (element === element.toUpperCase()) 
+      	newString += element.toLowerCase();
+      else if (element === element.toLowerCase()) 
+      	newString += element.toUpperCase();
+ 	});
+ 	return newString;
+ };
+
+ console.log(reverseCase(str));
