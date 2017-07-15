@@ -93,12 +93,12 @@ const contains = (array, item, cb) => {
 // Pass the array to the callback function.  Do not mutate the original array.
 
 const removeDuplicates = (arr, cb) => {
-  const uniques = [];
-
+  const uniques = ['Just', 'testing'];
+  return cb(uniques);
 };
 
 removeDuplicates(foods, (uniqueFoods) => {
-
+  console.log(uniqueFoods);
 });
 
 // Write a function called each that iterates over the provided array and passes the value and index into the callback.
