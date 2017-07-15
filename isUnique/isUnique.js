@@ -6,7 +6,7 @@
 const isUnique = (str) => {
 	var arr = {};
 	for (var i=0; i< str.length; i++){
-	var ch = str[i];
+		var ch = str[i];
 	if(arr[ch]) return false; else arr[ch] = true;
 	}
 	return true;
