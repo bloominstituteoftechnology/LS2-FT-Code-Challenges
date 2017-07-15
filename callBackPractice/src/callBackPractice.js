@@ -22,23 +22,16 @@
 
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
-const firstItem = (arr, cb) => {
-  cb(arr[0]);
-}
+const firstItem = (arr, cb) => cb(arr[0]);
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
-const getLength = (arr, cb) => {
-  cb(arr.length);
-}
+const getLength = (arr, cb) => cb(arr.length);
+
 // Write a function called last which passes the last item of the array into the callback
 // write code here
-const last = (arr, cb) => {
-  cb(arr[arr.length - 1]);
-}
+const last = (arr, cb) => cb(arr[getLength(arr, (cb) => (cb) - 1)]);
 // Write a function called sumNums that adds two numbers and passes the result to the callback
-const sumNums = (x, y, cb) => {
-  cb(x + y);
-}
+const sumNums = (x, y, cb) => cb(x + y);
 // write code here
 
 sumNums(5, 10, (sum) => {
@@ -56,6 +49,7 @@ const multiplyNums = (x, y, cb) => {
 const contains = (item , arr, cb) => {
   if (arr.includes(item)) return cb(true);
   cb(false);
+};
 
 // Write a function called removeDuplicates that removes all duplicate values from the given array.
 // Pass the array to the callback function.  Do not mutate the original array.
