@@ -22,37 +22,35 @@
 
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
-const firstItem = (array, () => {
-  console.log(cb(array[0]));
+const firstItem = (array, cb) => {
+  return cb(array[0]);
+};
+
+firstItem(foods, (index) => {
+  console.log(index);
 });
-
-// getFirst(foods, () => {
-//   return
-// });
-
-firstItem(foods);
 
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
 
-const getLength = (array, () => {
+const getLength = (array, cb) => {
   return cb(array.length);
-});
+};
 
 // Write a function called last which passes the last item of the array into the callback
 // write code here
 
-const last = (array, () => {
+const last = (array, cb) => {
   const lastElement = array.length - 1;
   return cb(array[lastElement]);
-});
+};
 
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 // write code here
-const sumNums = (num1, num2, () => {
+const sumNums = (num1, num2, cb) => {
   let sum = num1 + num2;
   return cb(sum);
-});
+};
 
 sumNums(5, 10, (sum) => {
   console.log(`The sum is ${sum}.`);
@@ -60,12 +58,18 @@ sumNums(5, 10, (sum) => {
 
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback
 // write code here
+const multiplyNums = (num1, num2, cb) => {
+  let product = num1 * num2;
+  return cb(product);
+}
 
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
 
 // write code here
+const contains = (array, cb) => {
 
+}
 
 // Write a function called removeDuplicates that removes all duplicate values from the given array.
 // Pass the array to the callback function.  Do not mutate the original array.
