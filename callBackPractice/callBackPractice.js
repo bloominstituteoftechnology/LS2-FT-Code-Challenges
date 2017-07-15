@@ -93,7 +93,8 @@ const contains = (array, item, cb) => {
 // Pass the array to the callback function.  Do not mutate the original array.
 
 const removeDuplicates = (arr, cb) => {
-  const uniques = ['Just', 'testing'];
+  const uniques = [];
+  sortedArray = arr.sort();
   return cb(uniques);
 };
 
