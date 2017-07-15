@@ -9,7 +9,7 @@
 // should check if is palindrome
 
 
-const isPalindrome = num => (num * 10) === Number(num.toString().split("").reverse().join("")) *10;
+const isPalindrome = num => num  === Number(num.toString().split("").reverse().join("")) *1;
 
 const isPrime = (num, memo = num) => {
   num = num -1;
@@ -23,12 +23,7 @@ const isPrime = (num, memo = num) => {
 const get = (num) => {
   biggest = false;
   for(let i = num; i>1; i--){
-    if( isPalindrome(i) == true )
-    {
-      if( isPrime(i) === true )
-      {
-        return biggest = i;
-      }
+    if( isPalindrome(i) == true ) if( isPrime(i) === true ) return biggest = i;
     }
   }
   return biggest;
