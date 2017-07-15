@@ -5,6 +5,7 @@
  * You will first want to determine if the number is a palindrome and then determine if it is prime.
  * A palindrome is a number that is the same forwards and backwards: 121, 323, 123454321, etc.
  */ 
+ // NOTES: See Sieve of Eratosthenes;
  // I have an array of 1000.
  // create array that will hold my palindromes;
  // create array that will hold my prime numbers;

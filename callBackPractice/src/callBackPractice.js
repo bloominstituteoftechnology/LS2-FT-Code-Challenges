@@ -20,10 +20,14 @@
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // Write a function called firstItem that passes the first item of the given array to the callback function
 
+const cb = () => {
 
-const firstItem = (array, () => {
+}
+const firstItem = (array, cb) => {
   
-  return array[0];
+  const cb = (array) => {
+  	return array[0];
+  }
 });
 
 // Write a function called getLength that passes the length of the array into the callback
