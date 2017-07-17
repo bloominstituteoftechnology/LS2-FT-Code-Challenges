@@ -25,6 +25,7 @@ const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mang
 const firstItem = (arr, cb) => {
 	cb(arr[0]);
 };
+
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
 const getLength = (arr, cb) => {
@@ -37,7 +38,6 @@ const last = (arr, cb) => {
 };
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 const sumNums = (x, y, cb) => {
-	//const temp = x + y;
 	cb(x + y);
 };
 // write code here
@@ -78,11 +78,7 @@ const removeDuplicates = (arr, cb) => {
 };
 
 removeDuplicates(foods, (uniqueFoods) => {
-  const arr = [];
-  foods.forEach((value) => {
-    if (arr.indexOf(value) < 0) arr.push(value);
-  });
-  return arr;
+  console.log(foods);
 });
 
 // Write a function called each that iterates over the provided array and passes the value and index into the callback.
