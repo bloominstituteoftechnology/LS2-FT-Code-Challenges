@@ -12,4 +12,15 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+
+    let sortArray = arr.sort(); // sort the array
+    let occurer; // this will hold the value that will be caught when the for loop runs
+
+    for(let i = 0 ;  i < sortArray.length; i++){
+      if(sortArray[i] === sortArray[i+1]){
+         occurer = sortArray[i]
+      }
+    return occurer;
+  
+}
 };
