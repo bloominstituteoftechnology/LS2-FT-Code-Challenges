@@ -6,28 +6,24 @@
  * A palindrome is a number that is the same forwards and backwards: 121, 323, 123454321, etc.
  */
 
- const checkPalindrome = (str) => {
-    var i = str.length - 1;
-    var k = 0;
-
-    while (i > k) {
-      var h = str.char(k++);
-      var j = str.charAt(i--);
-      if (str.charAt(k++) !== str.charAt(i--)) return false;
+const primePalindrome = (max) => {
+  let primed;
+  for (let i = max; i >= 0; i--) {
+    primed = true;
+    for (let j = 2; j < Math.sqrt(i); j++) {
+      if (i % j === 0) {
+        primed = false;
+        break;
+      }
     }
-    return true;
-  
-    	
-
-    	for (let i = 2; i < num; i++) {
-    		if (num % i === 0) {
-      			return false;
-    		}
-  		}
-  		return num > 1;
-	
-
+    if (primed) {
+      if (i.toString() === i.toString().split('').reverse().join('')) return i;
+    }
+  }
 };
+
+console.log(primePalindrome(1000));
+Add Comment Collapse
  
 
  checkPalindrome('929');
