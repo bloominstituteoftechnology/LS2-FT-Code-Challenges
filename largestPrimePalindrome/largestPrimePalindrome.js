@@ -23,13 +23,7 @@ const isPrime = (num, memo = num) => {
 const get = (num) => {
   biggest = false;
   for(let i = num; i>1; i--){
-    if( isPalindrome(i) == true )
-    {
-      if( isPrime(i) === true )
-      {
-        return biggest = i;
-      }
-    }
+    if( isPalindrome(i) == true ) if( isPrime(i) === true ) return biggest = i;   
   }
   return biggest;
 }
