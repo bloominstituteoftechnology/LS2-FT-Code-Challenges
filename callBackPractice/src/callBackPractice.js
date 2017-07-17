@@ -65,6 +65,9 @@ sumNums(5, 10, (sum) => {
 // Pass true to the callback if it is, otherwise pass false
 
 // write code here
+const contains = (item, arr, cb) => {
+	cb(arr.includes(item));
+}
 
 
 // // Write a function called removeDuplicates that removes all duplicate values from the given array.
