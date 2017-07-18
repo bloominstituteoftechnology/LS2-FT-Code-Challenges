@@ -5,9 +5,11 @@
 // I've been asked this three times in separate interviews.
 
 for (var i = 1; i <= 10; i++) {
-	setTimeout(function() {
+	setTimeout(function(z) {
 		// From looking at the code you would assume it would print 1 - 10
 		// It doesn't.  Why?  How can you make it print 1 - 10.
-		console.log(i);
-	}, 0);
+		console.log(z);
+	}, 0, i);
+
+	//once you call setTimeout the value for i is === x, but as you are calling it assynchronous way, i is now equal to y,z... SetTimeout will keep the execution blocks till finish the current stack or when reach ms.
 }
