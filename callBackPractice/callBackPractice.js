@@ -32,12 +32,12 @@ console.log(firstItem(foods));
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
 const getLength = (foods, cb) => {
-	cb(foods.getLength);
+	cb(foods.length);
 }
 // Write a function called last which passes the last item of the array into the callback
 // write code here
 const last = (foods, cb) => {
-	cb(foods[foods.getLength-1]);
+	cb(foods[foods.length-1]);
 }
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 // write code here
@@ -61,7 +61,7 @@ multiplyNums(5, 10, (product) => {
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
 const contains = (foods, cb) => {
-
+	cb(foods.includes)
 }
 // write code here
 
