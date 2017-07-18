@@ -11,7 +11,6 @@ for (var i = 1; i <= 10; i++) {
 		console.log(i);
 	}, 0);
 }
-
 // When setTimeout is used with a function as the first argument and its timer set to 0, 
-// the setTimeout block of code loses its chance to be executed immediately since JavaScript is single-threaded.
-// What I would do to make the code print from 1 - 10 will be to bring the console.log(i) statement out of the setTimeout method.
+// var is global and the setTimeout block of code loses its chance to be executed immediately since JavaScript is single-threaded.
+// What I would do to make the code print from 1 - 10 will be to bring the console.log
