@@ -23,7 +23,7 @@
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
 const firstItem = (arr, cb) => {
-  return cb(arr[0]);
+  cb(arr[0]);
 }
 firstItem(foods,(first) => {
   return first;
@@ -31,7 +31,7 @@ firstItem(foods,(first) => {
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
 const getLength = (arr, cb) => {
-  return cb(arr.length);
+  cb(arr.length);
 }
 getLength(foods, (length) => {
   return length;
@@ -40,7 +40,7 @@ getLength(foods, (length) => {
 // Write a function called last which passes the last item of the array into the callback
 // write code here
 const last = (arr, cb) => {
-  return cb(arr[arr.length - 1]);
+  cb(arr[arr.length - 1]);
 }
 last(foods, (lastItem) => {
   return lastItem;
@@ -49,7 +49,7 @@ last(foods, (lastItem) => {
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 sumNums = (num1, num2, cb) => {
   const sumOfNums = num1 + num2;
-  return cb(sumOfNums);
+  cb(sumOfNums);
 }
 // write code here
 sumNums(5, 10, (sum) => {
@@ -60,7 +60,7 @@ sumNums(5, 10, (sum) => {
 // write code here
 multiplyNums = (num1, num2, cb) => {
   const prodOfNums = num1 * num2;
-  return cb(prodOfNums);
+  cb(prodOfNums);
 }
 multiplyNums(5, 10, (prod) => {
   console.log(`The product is ${prod}.`);
