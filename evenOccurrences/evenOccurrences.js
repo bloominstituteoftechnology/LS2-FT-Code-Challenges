@@ -17,7 +17,7 @@
      occur.push([value, 0]);
    });
    for (let i = 0; i < occur.length; i++) for (let j = 0; j < arr.length; j++) if (occur[i][0] === arr[j]) occur[i][1] += 1;
-   for (let i = 0; i < occur.length; i++) if (occur[i][1] > 0 && occur[i][1] % 2 === 0) return occur[i][0];
+   for (let i = 0; i < occur.length; i++) if (occur[i][1] % 2 === 0) return occur[i][0];
    return null;
  };
 
