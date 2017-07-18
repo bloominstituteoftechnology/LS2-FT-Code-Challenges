@@ -9,19 +9,41 @@
  *   * const onlyEven = evenOccurence([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
  *    * console.log(onlyEven); //  4
  *    */
-
- const evenOccurence = (arr) => {
-   const newArr = [];
-   arr.forEach((item) => {
-     if(item % 2 === 0) newArr.push(item);
-   });
-  for (let i = 0; i < newArr.length; i++) {
-    for (let j = i + 1; j < newArr.length; j++) {
-      if (newArr[i] === newArr[j]) return newArr[i];
-   }
+const evenOccurence = (arr) => {
+  let count;
+  let even;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        count++;
+      }
+    }
+    if (count % 2 === 0) {
+      even = arr[i];
+      return even;
+    } count = 0;
   }
- };
+};
 
 
  const onlyEven = evenOccurence([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
  console.log(onlyEven); //  4
+
+
+ // const firstEven = (numbers) => {
+ //     const numCounts = {};
+ //     numbers.forEach((num) => {
+ //         if (numCounts[num]) {
+ //             return numCounts[num] += 1;
+ //         } else {
+ //             numCounts[num] = 1;
+ //         }
+ //     });
+ //
+ //     for (let i = 0; i < numbers.length; i++) {
+ //         let count = numCounts[numbers[i]];
+ //         if (count % 2 === 0) {
+ //             return numbers[i];
+ //         }
+ //     }
+ // };
