@@ -39,7 +39,7 @@ const getLength = (array, cb) => {
 
 getLength(foods, () => {
   console.log(`The length of the array is ${foods.length}`)
-})
+});
 
 // Write a function called last which passes the last item of the array into the callback
 // write code here
@@ -80,14 +80,14 @@ multiplyNums(5, 10, (product) => {
 
 // write code here
 const contains = (array, item, cb) => {
-  array.includes(item) ? cb(true) : cb(false);
+  cb(array.includes(item) ? true : false);
 }
 
-// contains(foods, 'mango', (item) => {
-//   if (cb(contains) === true) {
-//     console.log(`${item} is in this array!`)
-//   } else console.log(`${item} is not in this array :(`)
-// });
+contains(foods, 'mango', () => {
+  if (contains === true) {
+    console.log(`${item} is in this array!`)
+  } else console.log(`${item} is not in this array :(`)
+});
 
 // Write a function called removeDuplicates that removes all duplicate values from the given array.
 // Pass the array to the callback function.  Do not mutate the original array.
