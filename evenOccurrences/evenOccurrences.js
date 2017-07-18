@@ -12,6 +12,7 @@
 
 const evenOccurence = (arr) => {
   // Your code here.
+<<<<<<< HEAD
   const sortedArray = arr.split('').arr.sort().arr.join('');
     for (let i = 0; i < sortedArray.length; i++) {
       if (arr[i] === sortedArray[i]) {
@@ -19,4 +20,6 @@ const evenOccurence = (arr) => {
       }
       console.log(arr[i]);
     }
+=======
+>>>>>>> 4b180befc28359c1405b69759caeb8bbc91e5ab5
 };
