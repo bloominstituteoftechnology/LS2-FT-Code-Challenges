@@ -24,3 +24,4 @@ const evenOccurence = (arr) => {
 };
 
 evenOccurence([1, 7, 2, 4, 5, 1, 6, 8, 9, 6, 4, 1]);
+  // Your code here.
