@@ -13,7 +13,6 @@
 const binarySearch = (nums, target) => {
 	let max_index = nums.length -1; 
 	let min_index = 0;
-  let i = 0;
   let guess = Math.round((max_index+min_index)/2);
 
   const test = () => {
@@ -27,7 +26,6 @@ const binarySearch = (nums, target) => {
     //guess controller
     if (nums[guess] > target) guess = guess -1;
     else guess = guess +1;
-    i++;  
     return test(nums);
   };
   return test();
