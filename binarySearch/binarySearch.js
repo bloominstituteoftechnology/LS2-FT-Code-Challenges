@@ -15,10 +15,10 @@ const binarySearch = (nums, target) => {
   let max = nums.length - 1
   let guess;
   while (max >= min) {
-    guess = Math.round(max + min / 2);
+    guess = Math.floor((max + min) / 2);
     if (nums[guess] === target) return guess;
-    if (nums[guess] < target) min++;
-    else max--;
+    if (nums[guess] < target) min = guess + 1;
+    else max = guess - 1;
   }
   return guess;
 };
