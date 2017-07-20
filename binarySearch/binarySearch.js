@@ -14,43 +14,20 @@
 const binarySearch = (nums, target) => {
 	let max_index = nums.length -1; 
 	let min_index = 0;
-  let biggguess = Math.round((max_index+min_index)/2);
-  let lessguess = Math.round((max_index+min_index)/2);
-  let randguess = Math.round(Math.random((max_index+min_index)/2));
-  let randguess2 = Math.round(max_index);
-  let no_search = [];
-  let x = 0;
+  let guess = Math.round((max_index+min_index)/2);
 
-  console.log(x)
-  console.log(randguess)
   const test = () => {
     // limiterc
-    if (min_index > nums.length) return false;
+    if (min_index > max_index) return false;
     // randguess check
-    if (randguess === target) return randguess;
-    if (ranguess2 === target) return randguess2;
-    // is the lessguess or the less the right target?
-    if (nums[biggguess] === target)  return biggguess;
-    if (nums[lessguess] === target)  return lessguess;
-    // should go up-front if its already checked by the guesser
-    if (no_search.includes(min_index)) min_index++;
-    if (no_search.includes(max_index)) max_index--;
+    if (nums[guess] === target) return guess;
     // should check first and last current unchecked position
     if (nums[max_index] === target) return max_index; 
     if (nums[min_index] === target) return min_index;
     // adding values to first and last item
     max_index--;
     min_index++
-    x++;
-    // no_search controller
-    no_search.push(randguess);
-    no_search.push(biggguess);
-    no_search.push(lessguess);
-    // hand_gues reasign rand value
-    randguess = Math.random((max_index+min_index)/2);
-    biggguess--;
-    lessguess++;
-    return test(nums);
+    return test();
   };
   return test();
 };
