@@ -11,5 +11,9 @@
 **/
 
 const binarySearch = (nums, target) => {
+  let high;
+  let low;
+  for (let i = 0; i < nums.length; i++) {
 
+  }
 };
