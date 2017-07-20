@@ -10,6 +10,7 @@
  *	* console.log(index); // 1
 **/
 
+<<<<<<< HEAD
 
 // I wrote this with a while loop then realized that I needed
 // a for loop to give me the index of the elemnts but ran out of time
@@ -30,3 +31,8 @@ const binarySearch = (nums, target) => {
 };
 
 console.log(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2));
+=======
+const binarySearch = (nums, target) => {
+
+};
+>>>>>>> ec5956fd2344c05aa2895c2b186d485bd626c7b7
