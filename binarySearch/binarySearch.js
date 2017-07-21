@@ -26,7 +26,7 @@ const binarySearch = (nums, target) => {
     if (nums[min_index] === target) return min_index;
     // adding values to first and last item
     max_index--;
-    min_index++
+    min_index++;
     return test();
   };
   return test();
