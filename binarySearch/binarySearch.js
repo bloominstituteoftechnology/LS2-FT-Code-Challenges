@@ -12,8 +12,8 @@
 // i've made two push to repo lack of knowledge. I've creat a temp handler to tag where the array is not supposed go to and put a random extra  guesser trying to find by random
 // can you guyes iterate over it with me and shows me? :)
 const binarySearch = (nums, target) => {
-	let max_index = nums.length -1; 
-	let min_index = 0;
+  let max_index = nums.length -1; 
+  let min_index = 0;
   let guess = Math.round((max_index+min_index)/2);
 
   const test = () => {
