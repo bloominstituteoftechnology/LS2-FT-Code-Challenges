@@ -2,16 +2,26 @@
  *  so that each function call works.
  *
  *  Example:
- *
- *  greeting('Hey guys', (message) => {
- *     console.log(message);
- *  });
- *
- *  You would then define the greeting function to make the invocation work.
+
+ You would then define the greeting function to make the invocation work.
  *
  *  const greeting = (str, cb) => {
  *    cb(str);
  *  };
+ *
+ *  greeting('Hey guys', (message) => {
+ *     console.log(message);
+ *  });
+
+ // NEXT EXAMPLE
+ *const greeting = (num, cb) => {
+ *    cb(num + 1);
+ *  };
+ *
+ *  greeting( 4, (num) => {
+ *     console.log(num);
+ *  });
+ *  
  *
  */
 // to test this file cd into the directory where its found it in the command line and run node callBackPractice.js
@@ -33,9 +43,16 @@ const firstItem = (array, cb) => {
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
 
-const getLength = (array, () => {
+const getLength = (arr, anything => {
     
-  return array.length;
+    let newArray = array.length;
+
+  	anything(newArray);
+
+});
+
+getLength(foods, (newArray) => {
+	console.log('the length of the array is: ');
 });
 
 // Write a function called last which passes the last item of the array into the callback
