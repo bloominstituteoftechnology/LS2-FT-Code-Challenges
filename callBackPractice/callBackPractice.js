@@ -23,7 +23,7 @@
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
 const firstItem = (foods, cb) => {
-	cb(foods[1]);
+	cb(type);
 }
 firstItem(foods, (foods[1])) => {
 	console.log(foods[1])
