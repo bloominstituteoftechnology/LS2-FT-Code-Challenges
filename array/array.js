@@ -9,7 +9,7 @@
  */
 
  class Array {
-  constructor() {
+  constructor(index) {
     this.index = 0;
     this.array = {};
   }
@@ -18,7 +18,7 @@
     this.index++;
   }
   pop() {
-
+  	delete this.array[Object.keys(this.array).length - 1];
   }
   get(index) {
       return this.array[index];
