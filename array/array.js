@@ -42,13 +42,11 @@ class Array {
   delete(index) {
     const delelement = this.data[index];
     delete this.data[index];
-    for(let i = index+1; i <= this.length ; i++)
-    {
+    for(let i = index+1; i <= this.length ; i++) {
       this.data[i - 1] = this.data[i];
       delete this.data[i];
-    }
-    return delelement;
-  }
+      return delelement;
+   };
 }
 
 const arr = new Array();
