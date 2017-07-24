@@ -11,11 +11,12 @@
 class Array {
   constructor() {
     this.array = {};
-    
+    this.length = 0;
   }
 
-  push() {
-
+  push(element) {
+      this.array[this.length] = element;
+      this.length++;
   }
 
   pop() {
@@ -23,7 +24,7 @@ class Array {
   }
 
   get(index) {
-
+      return this.array[index];
   }
 
   delete(index) {
@@ -31,6 +32,6 @@ class Array {
   }
 }
 
-const myArray = new Array({'a': 1});
-
+const myArray = new Array();
+myArray.push({'a': 1});
 console.log(myArray);
