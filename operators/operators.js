@@ -5,7 +5,7 @@
  *
  */
 
- const modulo = (number,divisor) =>  { 
+  const modulo = (number,divisor) =>  { 
     const times = divide(number,divisor);
     let result = 0;
     if (times === 0) return 0;
@@ -14,7 +14,8 @@
     }
     return number - result;
   };
- const divide = (number,divisor) => {
+
+  const divide = (number,divisor) => {
     let guess = 1;
     let total = 0;
     let counter = 0;
@@ -38,13 +39,14 @@
       return tryout();
     };
     return tryout();
- };
- const multiply = (number, multiplyier) => {
-  let counter = 1;
-  let result = number;
-  while(multiplyier > counter) {
-    result += number;
-    counter++;
   };
-  return result;
- };
+  const multiply = (number, multiplyier) => {
+    let counter = 0;
+    let result = 0;
+    let times = multiplyier < 0 ? 0 - multiplyier : multiplyier;
+    while(times > counter) {
+      result = multiplyier < 0 ? result - number : result + number;
+      counter++;
+    };
+    return result;
+  };

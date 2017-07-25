@@ -14,3 +14,8 @@
  * };
  * breadthFirstSearch(tree, 2);// will return true before it recursively searches `z`
  */
+const breadthFirstSearch = (tree, searchvalue) => {
+  let result = false;
+  Object.keys(tree).forEach((key) => { if (tree[key] === searchvalue) return result = true; });
+  return result;
+};
