@@ -12,9 +12,9 @@ const multiply = (x, y) => {
   return product;
 };
 
-// console.log(multiply(3,4));
-// console.log(multiply(10,10));
-// console.log(multiply(5,6));
+console.log(multiply(3,4));
+console.log(multiply(10,10));
+console.log(multiply(5,6));
 
 const divide = (w, z) => {
   quotient = 0;
@@ -24,16 +24,11 @@ const divide = (w, z) => {
   return quotient;
 };
 
-// console.log(divide(100,10));
-// console.log(divide(77,11));
-// console.log(divide(56,8));
+console.log(divide(100,10));
+console.log(divide(77,11));
+console.log(divide(56,8));
 
-// const modulo = (v, u) => {
-//   let counter = 0;
-//   for (let i = v; i > 0; i -= u) {
-//     if (i < u) return i;
-//   }
-// };
+
 
 const modulo = (v, u) => {
   for (let i = v; i > 0; i -= u) {
