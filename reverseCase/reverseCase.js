@@ -3,3 +3,10 @@
  * Example: 'Hello World' -> 'hELLO wORLD'
  * Assume that each string will contain only spaces and letters.
  */
+const reverse = (str) => {
+	let temp = '';
+	for (let i = 0; i < str.length; i++) {
+		str[i] === str[i].toUpperCase() ? temp += str[i].toLowerCase() : temp += str[i].toUpperCase();
+	}
+	return temp;
+};

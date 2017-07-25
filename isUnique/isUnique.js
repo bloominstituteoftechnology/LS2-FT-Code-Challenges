@@ -4,9 +4,13 @@
  */
 
 const isUnique = (str) => {
-
+	while (str) {
+		let temp = str[0];
+		str = str.slice(1, str.length);
+		if (str.indexOf(temp) >= 0) return false;
+	}
+	return true;
 };
 
 console.log(isUnique('abcdhijklmnopqrstuv')); // true
 console.log(isUnique('abcdefga')); // false
-
