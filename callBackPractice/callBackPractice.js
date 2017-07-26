@@ -23,15 +23,32 @@
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
 
+const firstItem = (arr, () => {
+  return callback(arr[0]);
+});
+
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
+
+const getLength = (arr, () => {
+  return callback(arr.length);
+});
 
 // Write a function called last which passes the last item of the array into the callback
 // write code here
 
+const last = (arr, () => {
+  const theLast = arr.length - 1;
+  return callback(arr[theLast]);
+})
+
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 
 // write code here
+
+const sumNums = (foods, callback) => {
+
+}
 
 sumNums(5, 10, (sum) => {
   console.log(`The sum is ${sum}.`);

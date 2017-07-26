@@ -11,5 +11,30 @@
 **/
 
 const binarySearch = (nums, target) => {
+    let min = 0;
+	let max = nums.length - 1;
+    let midnum = Math.floor((min + max) / 2);
+    let found = -1;
+
+    while(min < max) {
+        if(nums[midnum] < target) {
+            min = midnum + 1;
+        }
+
+        else if (nums[midnum] >= target) {
+            max = midnum;
+        }
+
+        if(nums[midnum] === target) {
+            found = midnum;
+        }
+
+        midnum = Math.floor((min + max) / 2);
+    }
+
+    return found;
 
 };
+
+const index = binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3);
+console.log(index); // 2
