@@ -14,3 +14,5 @@
  * };
  * breadthFirstSearch(tree, 2);// will return true before it recursively searches `z`
  */
+
+//I had trouble with data structures.. Still don't understand them.
