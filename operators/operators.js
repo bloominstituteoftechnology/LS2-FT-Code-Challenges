@@ -24,7 +24,7 @@ const divide = (w, z) => {
   return quotient;
 };
 
-console.log(divide(100,10));
+console.log(divide(21,10));
 console.log(divide(77,11));
 console.log(divide(56,8));
 
