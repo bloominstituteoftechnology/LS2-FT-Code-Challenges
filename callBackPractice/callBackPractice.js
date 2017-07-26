@@ -25,6 +25,43 @@ const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mang
 
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
+<<<<<<< HEAD
+const getLength = (arr, cb) => {
+   return cb(arr.length);
+}
+getLength(foods, (element) => {
+  console.log(element);
+});
+// Write a function called last which passes the last item of the array into the callback
+// write code here
+const last = (arr, cb) => {
+  cb(arr.pop()); 
+}
+
+last(foods, (element) => {
+  console.log(element);
+});
+// Write a function called sumNums that adds two numbers and passes the result to the callback
+
+// write code here
+const sumNums = (num1, num2, cb) => {
+  return cb(num1 + num2);
+}
+
+sumNums(1, 2, (sum) => {
+  console.log(sum);
+})
+// Write a function called multiplyNums that multiplies two numbers and passes the result to the callback
+// write code here
+
+const mulitplyNums = (num1, num2, cb) => {
+  return cb(num1 * num2);
+}
+
+multiplyNums(5, 5, (sum) => {
+  console.log(sum);
+});
+=======
 
 // Write a function called last which passes the last item of the array into the callback
 // write code here
@@ -40,12 +77,23 @@ sumNums(5, 10, (sum) => {
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback
 // write code here
 
+>>>>>>> 4b180befc28359c1405b69759caeb8bbc91e5ab5
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
 
 // write code here
+<<<<<<< HEAD
+const contains = (item, arr, cb) => {
+  cb(arr.includes(item));
+  };
+
+contains('pineapple', foods, (element) => {
+  console.log(element);
+});
+=======
 
 
+>>>>>>> 4b180befc28359c1405b69759caeb8bbc91e5ab5
 // Write a function called removeDuplicates that removes all duplicate values from the given array.
 // Pass the array to the callback function.  Do not mutate the original array.
 
