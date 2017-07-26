@@ -22,27 +22,47 @@
 
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 // write code here
-
+const firstItem = (foods, cb) => {
+	cb(type);
+}
+firstItem(foods, (foods[1])) => {
+	console.log(foods[1])
+};
+console.log(firstItem(foods));
 // Write a function called getLength that passes the length of the array into the callback
 // write code here
-
+const getLength = (foods, cb) => {
+	cb(foods.length);
+}
 // Write a function called last which passes the last item of the array into the callback
 // write code here
-
+const last = (foods, cb) => {
+	cb(foods[foods.length-1]);
+}
 // Write a function called sumNums that adds two numbers and passes the result to the callback
-
 // write code here
-
+const sumNums = (num1, num2, cb) => {
+	let result = num1 + num2
+	cb(result);
+}
 sumNums(5, 10, (sum) => {
   console.log(`The sum is ${sum}.`);
 });
 
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback
 // write code here
-
+const multiplyNums = (num1, num2, cb) => {
+	let result = num1 * num2;
+	cb(result);
+}
+multiplyNums(5, 10, (product) => {
+	console.log(`The product is ${product}.`);
+});
 // Write a function called contains that checks if an item is present inside of the given array.
 // Pass true to the callback if it is, otherwise pass false
-
+const contains = (foods, cb) => {
+	cb(foods.includes)
+}
 // write code here
 
 
@@ -60,7 +80,9 @@ removeDuplicates(foods, (uniqueFoods) => {
 // Write a function called each that iterates over the provided array and passes the value and index into the callback.
 
 const each = (arr, cb) => {
-
+	for(i = 0; i < arr.length; i++) {
+		cb(arr[i], i);
+	};
 };
 
 each(foods, (value, index) => {
