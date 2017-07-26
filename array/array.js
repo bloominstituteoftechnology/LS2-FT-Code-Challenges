@@ -7,3 +7,31 @@
  * How do these operations compare to that of a linked list?
  * How does the time complexity of insertion and deletion compare to that of a linked list?
  */
+
+class Array {
+  constructor() {
+    this.array = {};
+    this.length = 0;
+  }
+
+  push(element) {
+      this.array[this.length] = element;
+      this.length++;
+  }
+
+  pop() {
+
+  }
+
+  get(index) {
+      return this.array[index];
+  }
+
+  delete(index) {
+
+  }
+}
+
+const myArray = new Array();
+myArray.push({'a': 1});
+console.log(myArray);
