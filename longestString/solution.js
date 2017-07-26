@@ -7,4 +7,3 @@ const longestString = (strings) => {
 };
 
 console.log(longestString(['abc', 'def', 'gasdfasf', 'asdf', 'e', 'agwoaiengpoing']));
-
