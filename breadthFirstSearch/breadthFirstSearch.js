@@ -14,3 +14,16 @@
  * };
  * breadthFirstSearch(tree, 2);// will return true before it recursively searches `z`
  */
+const breadthFirstSearch = (tree, searchValue) => {
+  let queue = Object.values(tree);
+  const search = () => {
+    if (queue.length === 0) return false;
+    const item = queue.shift();
+    if (typeof item === 'object' && item !== null && !Array.isArray(item)) queue.concat(item);
+    if (item === searchValue) {
+      return true;
+    }
+    return search();
+  };
+  return search();
+};
